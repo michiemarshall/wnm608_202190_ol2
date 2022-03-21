@@ -1,17 +1,4 @@
-/* CSS RESET */
-
-*,*::after,*::before {
-	box-sizing:border-box;
-}
-
-:root{
-	--color-offwhite:  #e9e9e9;
-	--color-neutral-light: #dadeba;
-	--color-neutral-medium: #80804d;
-	--color-neutral-dark: #2d2d2b;
-}
-
-body {
+ul,li,body,p{
 	box-sizing:border-box;
 	margin:0;
 	font-size:1em;
@@ -55,7 +42,7 @@ font-weight: 500;
 
 /* card */
 .card {
-    background-color: white;
+    background-color:var(--color-offwhite);
     overflow: hidden;
     position: relative;
     padding: 1em;
@@ -66,7 +53,7 @@ font-weight: 500;
 	.card>:last-child { margin-bottom:0; }
 
 	.card.soft {
-	    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+	   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
 		border-radius:0.2em;
 	}
 	.card.medium {
@@ -350,114 +337,6 @@ color: var(--color-neutral-medium);
 }
 
 
-/* TABLE */
-.table {
-  width:100%;
-  border-collapse:collapse;
-}
-.table th,
-.table td {
-  text-align:left;
-  padding:0.5em;
-}
-
-
-.table.striped tbody tr:nth-child(odd) {
-  background-color:#b7d4b2;
-}
-.table.striped tbody tr:hover {
-  background-color:#a9b586;
-}
-
-
-/* Product */
-
-.figure.product {
-		border-radius: 0.5em;
-		box-shadow: 0px 4px 20px rgba(29, 35, 55, 0.15);
-		border-radius: 20px;
-		overflow: hidden;
-}
-
-
-/* Product overlay */
-
-.product-overlay {
-		border-radius: 0.5em;
-		box-shadow: 0px 4px 20px rgba(29, 35, 55, 0.15);
-		border-radius: 20px;
-	position: relative;
-	overflow: hidden;
- }
-
-
-.product-overlay figcaption{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	opacity: 0;
-	transition: all 0.3s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-}
-
-
-
-
-.product-overlay:hover  figcaption {
-	opacity: 1;
-
-
-}
-.product-overlay .caption-body {
-	background-color: white;
-	border-radius:0.5em;
-	padding: 1em;
-	transform: translateY(2em);
-	transition: all 0.3s;
-}
-
-.product-overlay:hover .caption-body {
-	transform: translateY(0);
-}
-
-
-
-.product-overlay img {
-	transform: scale(1,1);
-	transition: all 0.3s;
-}
-.product-overlay:hover img {
-	transform: scale(1.4,1.4);
-}
-
-
-
-
-@media (max-width: 600px) {
-	.product-overlay figcaption {
-		position: relative;
-		display: block;
-		top: initial;
-		left: initial;
-		width: 100%;
-		height: 100%;
-		opacity: 1;
-		background-color: initial;
-	}
-	.product-overlay .caption-body {
-		transform: none;
-		padding: 0;
-	}
-}
-
-
-
 .favorite label {
   transition: all 0.3s;
   display: inline-block;
@@ -465,7 +344,7 @@ color: var(--color-neutral-medium);
 }
 
 .favorite input:checked + label{
-  	color: red;
+  color: red;
   transform: scale(1.3,1.3);
 }
 
@@ -497,3 +376,15 @@ color: var(--color-neutral-medium);
 .toggle input:checked + label::after{
   transform: translateX(1em);
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="https://use.typekit.net/leq4zby.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="../styleguide/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
 </head>
@@ -29,10 +29,11 @@
 
 <div class="container" id="#toc">	
 	
-			<h2> Table of contents </h2>
+			
 	<div class="card soft">
 		<div class="card">
 				<nav class="nav toc">
+					<h2> Table of contents </h2>
 					<ul>
 						<li> <a href="#typography"> Typography </a></li>
 						<li> <a href="#navi"> Navigation </a></li>
@@ -41,10 +42,7 @@
 						<li> <a href="#search"> Search Bar </a></li>
 						<li> <a href="#tables"> Tables </a></li>
 						<li> <a href="#forms"> Forms </a></li>
-
-						<ul> <li> <a href="#inputs">Inputs </a></li>
-							
-						</ul>
+						<li> <a href="#inputs">Inputs </a></li>
 					</ul>
 				</nav>
 		</div>
@@ -178,16 +176,15 @@
 
     <div class="card">
       <h3>Basic Table</h3>
-
       <script>document.write(makeTable('table'))</script>
     </div>
-
 
     <div class="card">
       <h3>Striped Table</h3>
 
-      <script>document.write(makeTable('table striped'))</script>
+      <script>document.write(makeTable("table striped"))</script>
     </div>
+
   </section>
 
 
@@ -323,9 +320,114 @@
 			<input type="checkbox" id="toggle-1" class="hidden">
 			<label for="toggle-1"> </label> 
 		</div>
+		</div>
+	</div>
 
+	
+	<div class="container" id="figures">
+		<h2>Figures</h2>
+		<div class="card">
+			<h3>Basic Figure</h3>
+			<figure class="figure">
+				<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+				<figcaption>Product</figcaption>
+			</figure>
+		</div>
+
+			<h3>Figure Grid</h3>
+			<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+							<figcaption>Product</figcaption>
+						</figure>	
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+							<figcaption>Product</figcaption>
+						</figure>	
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+							<figcaption>Product</figcaption>
+						</figure>	
+					</div>
+				</div>
+
+		<h3>Product Grid</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>3.99</div>
+					</figcaption>
+				</figure>	
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>3.99</div>
+					</figcaption>
+				</figure>	
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div>Product Name</div>
+						<div>3.99</div>
+					</figcaption>
+				</figure>	
+			</div>
+		</div>
+
+		<h3>Product Overlay</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>9.90</div>
+						</div>
+					</figcaption>
+				</figure>	
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>31.92</div>
+						</div>
+					</figcaption>
+				</figure>	
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://cdn.shopify.com/s/files/1/2473/8384/files/Ground-Matcha-Tea-Powder-from-Leaves.jpg?v=1645806580" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>42.99</div>
+						</div>
+					</figcaption>
+				</figure>	
+			</div>
+		</div>
 
 	</div>
+
+		
+		
 	</div>
 
 </div>
