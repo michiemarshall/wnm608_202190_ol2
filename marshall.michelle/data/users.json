@@ -1,0 +1,32 @@
+[
+	{
+	"name":"Aglio Olio",
+	"type":"Student",
+	"email":"ahahahah@gmail.com",
+	"classes":[222,111,555]
+    },
+    {
+		"name": "Edward Elric",
+		"type": "Student",
+		"email": "hagane@gmail.com",
+		"classes": [333, 566, 545]
+	},
+	{
+		"name": "Jay Park",
+		"type": "Student",
+		"email": "jaypark@gmail.com",
+		"classes": [655, 777, 635, 775]
+	},
+	{
+		"name": "Gojo Satoru",
+		"type": "Teacher",
+		"email": "ryoikitenkai@jjk.com",
+		"classes": [333]
+	},
+	{
+		"name": "Kim Namjoon",
+		"type": "Student",
+		"email": "knjgmail.com",
+		"classes": [634, 234, 123]
+	}
+]
