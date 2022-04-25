@@ -76,6 +76,7 @@ li {
 	.card.soft {
 	   box-shadow: 0px 4px 20px rgba(29, 35, 55, 0.15);
 		border-radius:30px;
+    padding: 1em;
 	}
 	.card.medium {
 		background-color:var(--color-neutral-medium);
@@ -87,6 +88,16 @@ li {
 	.card.flat {
 		padding:0;
 	}
+
+
+  .card-section~.card-section{ 
+  border-top: 1px solid var(--color-neutral-light);
+  }
+
+  .card-section{ 
+  padding: 1em;
+  margin: 1em;
+  }
 
 
 .cardA{
@@ -430,6 +441,7 @@ color: var(--color-neutral-medium);
 		border-radius: 0.5em;
 		box-shadow: 0px 4px 20px rgba(29, 35, 55, 0.15);
 		border-radius: 10px;
+    padding: 1.5em;
 		
 }
 

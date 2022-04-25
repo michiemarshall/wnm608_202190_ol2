@@ -14,17 +14,33 @@
 			<h2> Teaphoria Best Sellers </h2>
 			
 			<ul>
-				<li><a href="product_item.php">Product 1</a></li>
-				<li><a href="product_item.php">Product 2</a></li>
-				<li><a href="product_item.php">Product 3</a></li>
-				<li><a href="product_item.php">Product 4</a></li>
+				<li><a href="product_item.php?id=1">Product 1 example</a></li>
+
 			</ul>
 
 
-		</div>
 
 
+
+	<?php 
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT *
+			FROM `products` 
+			ORDER BY `date_create` DESC
+			LIMIT 12 
+			"
+		);
+
+		echo "<div class='grid gap'>",array_reduce($result,'productListTemplate'),"</div>"; 
+
+	?> 
 	</div>
+</div>
 	
 </body>
-</html>z
+</html>
