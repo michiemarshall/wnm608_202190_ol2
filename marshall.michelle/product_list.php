@@ -12,15 +12,6 @@
 	<div class="container">
 		<div class="card soft">
 			<h2> Teaphoria Best Sellers </h2>
-			
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1 example</a></li>
-
-			</ul>
-
-
-
-
 
 	<?php 
 		include_once "lib/php/functions.php";
