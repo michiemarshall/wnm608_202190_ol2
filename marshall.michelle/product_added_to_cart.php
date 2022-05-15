@@ -1,14 +1,17 @@
-<?php 
+<?php
 
-include"lib/php/functions.php";
+include_once "lib/php/functions.php";
 
-$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
-?><!DOCTYPE html>
+//$cart_product = array_find(getCart(),function($o){return $o->id==$_GET['id'];});
+    
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cart Confirmation</title>
+	<title>Teaphoria - Cart Confirmation</title>
 
 		<?php include "parts/meta.php"; ?>
 </head>
@@ -18,7 +21,7 @@ $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['i
 
 	<div class="container">
 		<div class="card soft">
-			<h2> You added <?=product->title ?> to your cart </h2>
+			<h2> You added <?=$product->name ?> to your cart </h2>
 
 			<div class="display-flex">
 				<div class="flex-none"><a href="product_list.php"> Back to Store </a></div>

@@ -17,7 +17,7 @@ return $r."<img src='img/$o'>";
 <head>
 	<title>Product Item</title>
 		<?php include "parts/meta.php"; ?>
-		<script src= "js/product_thumbs.js"></script>
+		<script src= "lib/js/product_thumbs.js"></script>
 </head>
 
 <body>
@@ -40,31 +40,39 @@ return $r."<img src='img/$o'>";
 
 			<div class="col-xs12 col-md-5">
 					<div class="card soft">
-						<div class="card-section">
-							<H2 class="product-name"><?= $product->name ?></H2>
-					 		<div class="product-price"> &dollar;<?= $product->price ?></div>
-					 	</div>
-	
-	
-					 	<div class="card-section">
-					 		<Label for="product-amount" class="form-label">Amount</Label>
-					 		<div class="form-select" id="product-amount">
-					 			<select>
-					 				<option>1</option>
-					 				<option>2</option>
-					 				<option>3</option>
-					 				<option>4</option>
-					 			</select>
-					 		</div>
-					 	</div>
+						<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+							
 
-	
-	
-						<div class="card-section">
-						 		<div>
-						 			<a href="product_added_to_cart.php?id=<?= $product->id ?>" class="form-button"> Add to Cart </a>
-						 		</div>
-						</div>
+                <input type="hidden" name="product-id" value="<?= $product->id ?>">
+
+                <div class="card-section">
+                 <h2 class="title"><?= $product->name ?></h2>
+
+                 <p class="product-price">&dollar;<?= $product->price ?></p>
+
+
+                 <p class="product-description"><?= $product->description ?></p>
+
+
+                </div>
+
+               		<div class="card-section">
+               		    <label for="product-amount" class="form-label">Amount</label>
+               		    <div class="form-select">
+               		        <select id="product-amount" name="product-amount">
+               		            <option>1</option>
+               		            <option>2</option>
+               		            <option>3</option>
+               		            <option>4</option>
+               		            <option>5</option>
+               		         </select>
+               		    </div>
+                </div>
+
+                <div class="card-section">
+                    <input type="submit" class="form-button" value="Add to Cart"> 
+                </div>
+            </form>
 					</div>
 			</div>
 		</div>

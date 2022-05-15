@@ -46,7 +46,7 @@
 				<div class="container">
 
 				     	<div class="form-control">
-				        <button type="button" class="form-button"> <div class="container"> <br> Place Order <br> <br> </div></button>
+				        <a href="product_confirmation.php" class="form-button">Complete Checkout</a>
 				      </div>
 
 				</div>

@@ -177,7 +177,7 @@ li {
   }
   .nav a:hover {
     background-color: var(--color-main-medium);
-    color: var(--color-white);
+    color: var(--color-neutral-medium);
     text-decoration: none;
   }
   .nav .active a{
@@ -190,7 +190,7 @@ li {
 .nav-pills ul,
 .nav-stretch ul,
 .nav-flex ul {
-  display: flex;
+  display: flex-stretch;
 }
 .nav-material li,
 
@@ -355,7 +355,7 @@ ul.breadcrumbs li a:hover {
     font: inherit;
     -webkit-appearance: none;
     color: inherit;
-    width: 50%;
+    width: 100%;
     outline: 0;
     border-radius: 2em;
     cursor: pointer;
@@ -388,7 +388,7 @@ ul.breadcrumbs li a:hover {
 
 
 
-/* select*/
+/* select*/ 
 
 .form-select>select{
   padding: 0.5em 1em;
@@ -455,6 +455,10 @@ color: var(--color-neutral-medium);
 .productlist a {
 text-decoration: none;
 font-weight: initial;
+}
+
+#productlist_margin {
+    margin-top: 100px;
 }
 
 .product.figure.hover{
@@ -604,6 +608,6 @@ font-weight: initial;
   letter-spacing: .1vh;
   color: #FFFFFF;
   text-align: center;
-  padding: 180px;
+  padding: 80px;
   line-height: 13vh;
 }
