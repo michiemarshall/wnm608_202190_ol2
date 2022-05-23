@@ -62,7 +62,10 @@
 		<div class="card soft">
 			<h2> Teaphoria Best Sellers </h2>
 
-			<div class='productlist grid gap'></div>
+			<div class='productlist grid gap'>
+
+
+			</div>
 	</div>
 
 	</div>

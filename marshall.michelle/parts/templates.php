@@ -90,10 +90,7 @@ function cartTotals() {
 				    <div class="flex-stretch"><strong>Total</strong></div>
 				    <div class="flex-none">&dollar;$taxedfixed</div>
 				</div>
-				<div class="card-section">
-				    <a href="product_checkout.php" class="form-button">Place Order</a>
 
-				</div>
 
 HTML;
 }

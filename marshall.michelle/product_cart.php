@@ -30,6 +30,9 @@ $cart_items = getCartItems();
             </div>
         </div>
 
+        </div>
+
+     
 
 </div>
 </body>

@@ -89,6 +89,12 @@ li {
 		padding:0;
 	}
 
+[class*='col-']>.card {
+    height: 100%;
+    margin: 0;
+}
+
+
 
   .card-section~.card-section{ 
   border-top: 1px solid var(--color-neutral-light);

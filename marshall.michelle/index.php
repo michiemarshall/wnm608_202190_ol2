@@ -40,10 +40,11 @@
 
 		
 		<div class="container">    
-				<div class="container card soft">
-        		<div class="flex flex-stretch "><h2>New Arrivals</h2>
-        		<?php recommendedCategory("East Asian"); ?>
-    			</div>
+				<div class="container card soft flat">
+        			<div class="flex flex-stretch ">
+        				<nav class="nav"> <h2>New Arrivals</h2></nav>
+        			<?php recommendedCategory("East Asian"); ?>
+    				</div>
     			</div>
 	
 		</div>
